@@ -1204,6 +1204,7 @@ li img {
   width: 60vw;
   min-height: 100vh;
   /* display: grid; */
+  
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -1222,14 +1223,46 @@ li img {
 .content ul li {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 20px;
+  overflow: hidden;
+  height: 200px;
 
   position: relative;
-  gap: 100px;
+  gap: 50px;
 
+}
+
+.content ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+.content ul li .img-container {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content ul li .img-container img {
+  position: relative;
+  animation: 10s linear alternate infinite animate-img;
+}
+
+@keyframes animate-img {
+  0% {
+    top: 0;  
+  }
+
+  100% {
+    top: -200%
+  }
 }
 
 .content ul li:hover .reference-hover-content {
@@ -1237,6 +1270,35 @@ li img {
   gap: 100px;
 }
 
+.right-col {
+  
+  font-family: sfpro;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  color: white;
+  text-align: justify;
+  
+ 
+}
+
+.right-col span:first-child {
+  color: var(--main-color);
+  font-family: sfpromed;
+  font-size: 24px;
+}
+
+.right-col span:nth-child(3) {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 300px;
+  color: rgb(138, 143, 152);
+}
+
+.content ul li img {
+  width: 100%;
+
+}
 
 
 .reference-hover-content {
@@ -1273,37 +1335,10 @@ li img {
 
 }
 
-.content ul li img {
-  width: 350px;
-  /* margin-right: 100px; */
-  
-  height: auto;
-}
 
-.right-col {
-  
-  font-family: sfpro;
-  display: flex;
-  font-size: 16px;
-  flex-direction: column;
-  color: white;
-  text-align: justify;
-  
- 
-}
 
-.right-col span:first-child {
-  color: var(--main-color);
-  font-family: sfpromed;
-  font-size: 24px;
-}
 
-.right-col span:nth-child(3) {
-  font-size: 14px;
-  margin-top: 10px;
-  width: 300px;
-  color: rgb(138, 143, 152);
-}
+
 
 .stack {
   display: flex;
@@ -1445,6 +1480,7 @@ li img {
 }
 
 .image-container {
+  
   width: 32px;
   margin: 5px;
   height: 32px;
