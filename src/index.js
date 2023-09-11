@@ -11,14 +11,10 @@ root.render(
     <>
         asd
    
-        <BrowserRouter>
-            <Routes>
-                <Route path="/*" element={            
+        <BrowserRouter>         
                     <Provider store={store}>
                         <App />
                     </Provider>
-                } />
-            </Routes>
         </BrowserRouter>
         </>
    
