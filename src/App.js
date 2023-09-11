@@ -69,7 +69,7 @@ function App() {
  <>
            
         
-        <div className="main-container">
+        {/* <div className="main-container">
 
             <AnimatePresence mode="wait">
                 <Routes location={location} key = {location.pathname}>
@@ -77,10 +77,10 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/references" element={<Reference />} />
-                </Routes> 
-            </AnimatePresence>
+                </Routes>  */}
+            {/* </AnimatePresence> */}
             <Menu />           
-        </div>
+        {/* </div> */}
         </>
     );
 }
