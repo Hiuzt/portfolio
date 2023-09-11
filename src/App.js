@@ -21,6 +21,9 @@ function App() {
     const dispatch = useDispatch();
     const languageID = useSelector(selectLanguageID)
 
+    window.reload();
+    window.reload();
+
     useEffect(() => {
         const activeColor = localStorage.getItem("main-color");
         if (activeColor === null) {
@@ -123,15 +126,15 @@ function App() {
        </div>
         <div className="main-container">
 
-            {/* <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait">
                 <Routes location={location} key = {location.pathname}>
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/references" element={<Reference />} />
                 </Routes>
-            </AnimatePresence> */}
-            {/* <Menu />            */}
+            </AnimatePresence>
+            <Menu />           
         </div> 
         </>
     );
