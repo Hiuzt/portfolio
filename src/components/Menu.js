@@ -11,7 +11,6 @@ import $ from "jquery"
 
 
 const Menu = () => {
-    const [menuNumber, setMenuNumber] = useState(0)
     const [showMenu, setShow] = useState(true);
 
     const languageID = useSelector(selectLanguageID)
