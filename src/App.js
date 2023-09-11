@@ -22,19 +22,19 @@ function App() {
     const languageID = useSelector(selectLanguageID)
 
     useEffect(() => {
+        const storageItemLanguageID = localStorage.getItem("languageID")
+
+        if (storageItemLanguageID === null) {
+            localStorage.setItem("languageID", 1)
+            window.location.reload();
+        }
+
         const activeColor = localStorage.getItem("main-color");
         if (activeColor === null) {
             localStorage.setItem("main-color", 5)
             document.body.classList.add("color-5")
             setColor(5);
             return;
-        }
-
-        const storageItemLanguageID = localStorage.getItem("languageID")
-
-        if (storageItemLanguageID === null) {
-            localStorage.setItem("languageID", 1)
-            window.location.reload();
         }
 
         document.body.classList.add("color-" + activeColor);
