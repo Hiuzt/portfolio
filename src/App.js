@@ -30,7 +30,7 @@ function App() {
                     <Route path="/references" element={<Reference />} />
                 </Routes>  */}
             {/* </AnimatePresence> */}
-            {/* <Menu />            */}
+            <Menu />           
         {/* </div> */}
         </>
     );
