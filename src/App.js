@@ -34,6 +34,7 @@ function App() {
 
         if (storageItemLanguageID === null) {
             localStorage.setItem("languageID", 1)
+            location.reload();
         }
 
         document.body.classList.add("color-" + activeColor);
