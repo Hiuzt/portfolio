@@ -15,56 +15,7 @@ import {selectLanguageID} from "./redux/features/languageSlice";
 
 
 function App() {
-    const location = useLocation();
-    const [isOpen, setOpen] = useState(false);
-    const [activeColorState, setColor] = useState(5);
-    const dispatch = useDispatch();
-    const languageID = useSelector(selectLanguageID)
-
-    useEffect(() => {
-        const activeColor = localStorage.getItem("main-color");
-        if (activeColor === null) {
-            localStorage.setItem("main-color", 5)
-            document.body.addClass("color-5")
-            setColor(5);
-            return;
-        }
-
-        const storageItemLanguageID = localStorage.getItem("languageID")
-
-        if (storageItemLanguageID === null) {
-            localStorage.setItem("languageID", 1)
-            location.reload();
-        }
-
-        document.body.classList.add("color-" + activeColor);
-        setColor(parseInt(activeColor))
-
-
-    }, [])
-
-    const baseColors = ["#34b1eb", "#ab34eb", "#469950", "#998646", "#f58545", "#a83232"]
-
-    const showSettings = () => {
-        if (isOpen === false) {
-            $(".settings-bg").addClass("open")
-            setOpen(true)
-        }
-    }
-
-    const changeColor = (colorIndex) => {
-        document.body.classList.replace("color-" + activeColorState, "color-" + (colorIndex + 1));
-        localStorage.setItem("main-color", colorIndex + 1)
-        setColor(colorIndex + 1)
-    }
-
-    const changeLanguage = (languageID, target) => {
-        dispatch(SET_LANGUAGE_ID(languageID));
-        // $(".language-selector img.active-language").removeClass("active-language")
-        // target.classList.add("active-language")
-
-    }
-
+   
     return (
  <>
            
