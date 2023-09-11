@@ -21,8 +21,8 @@ function App() {
     const dispatch = useDispatch();
     const languageID = useSelector(selectLanguageID)
 
-    window.reload();
-    window.reload();
+    window.location.reload();
+    window.location.reload();
 
     useEffect(() => {
         const activeColor = localStorage.getItem("main-color");
