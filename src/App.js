@@ -25,7 +25,7 @@ function App() {
         const activeColor = localStorage.getItem("main-color");
         if (activeColor === null) {
             localStorage.setItem("main-color", 5)
-            document.body.addClass("color-5")
+            document.body.classList.add("color-5")
             setColor(5);
             return;
         }
