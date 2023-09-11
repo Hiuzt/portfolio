@@ -123,14 +123,14 @@ function App() {
        </div>
         <div className="main-container">
 
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
                 <Routes location={location} key = {location.pathname}>
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/references" element={<Reference />} />
                 </Routes>
-            </AnimatePresence>
+            </AnimatePresence> */}
             {/* <Menu />            */}
         </div> 
         </>
