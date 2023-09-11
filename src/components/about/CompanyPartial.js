@@ -5,6 +5,23 @@ import 'owl.carousel';
 
 const CompanyPartial = () => {
 
+    const option = {
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            700: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+    
+            }
+        }
+    }
 
     const companyArray = [
         <svg fill='#FFF' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="100" viewBox="0,0,256,256">
@@ -48,7 +65,39 @@ const CompanyPartial = () => {
     <center>
 
     
-        <ReactOwlCarousel loop={true} autoplay={true} items={6} autoplayHoverPause={true} autoplayTimeout={6000} >
+        <ReactOwlCarousel 
+            loop={true}
+            autoplay={true}
+            // items={6}
+            autoplayHoverPause={true}
+            autoplayTimeout={6000} 
+            responsive= {
+                {
+                    '0': {
+                        items: 1
+                    },
+                    '350': {
+                        items: 2
+                    },
+                    '500': {
+                        items: 3
+                    },
+                    '600': {
+                        items: 4
+                    },
+                    '800':{
+                        items: 5
+                    },
+                    '1250':{
+                        items: 6
+                    },
+                    '1600':{
+                        items: 7
+                    },
+                }
+                
+            }
+            >
             {companyArray.map((skillData, skillIndex) => 
                 <div className="item">
                     {skillData}

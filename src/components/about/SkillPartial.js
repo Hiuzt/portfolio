@@ -9,7 +9,32 @@ const SkillPartial = () => {
 
   return (
     <center>
-        <ReactOwlCarousel loop={true} autoplay={true} items={6} autoplayHoverPause={true} autoplayTimeout={2000} >
+        <ReactOwlCarousel loop={true} autoplay={true} autoplayHoverPause={true} autoplayTimeout={2000}      
+            responsive= {
+                {
+                    '0': {
+                        items: 1
+                    },
+                    '340': {
+                        items: 2
+                    },
+                    '500': {
+                        items: 3
+                    },
+                    '800':{
+                        items: 4
+                    },
+                    '1250':{
+                        items: 5
+                    },
+                    '1600':{
+                        items: 6
+                    },
+                    
+                }
+                
+            }
+         >
             {skillArray.map((skillData, skillIndex) => 
                 <div className="item">
                     {skillBg(skillData[0], skillData[1], skillData[2], skillData[0])}
@@ -22,8 +47,6 @@ const SkillPartial = () => {
 }
 
 function skillBg(skillName, skillValue, pictureOfSkill, skillID) {
-    // var elementSource = document.getElementById(skillID);
-    // elementSource.style.strokeDashoffset = (440 - 440 * (skillValue/100))
 
     
     return (

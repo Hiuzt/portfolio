@@ -1,14 +1,19 @@
 import React from 'react'
+import { useDispatch, useSelector } from "react-redux";
+import {selectLanguageID} from "../../redux/features/languageSlice";
+import Languages from "../Languages";
 
 const PersonalPartial = () => {
 
+    
+    const languageID = useSelector(selectLanguageID)
     const personalArray = [
-        ["Teljes név", "Kerner Dániel"],
-        ["Születési idő", "2000.11.17."],
-        ["Lakhely", "Pécs"],
-        ["Telefonszám", "+36 20 318 4108"],
-        ["E-Mail", "kerner.daniel1@gmail.com"],
-        ["Munkahely", "Deutsche Telekom"],
+        [Languages(languageID, 7), "Kerner Dániel"],
+        [Languages(languageID, 8), "2000.11.17."],
+        [Languages(languageID, 9), "Pécs"],
+        [Languages(languageID, 10), "0620-318-4108"],
+        [Languages(languageID, 11), "kerner.daniel1@gmail.com"],
+        [Languages(languageID, 12), "Deutsche Telekom"],
     ]
 
 
@@ -17,23 +22,19 @@ const PersonalPartial = () => {
 
     
         <span id="first">               
-                    <h1>Junior webfejlesztő</h1>
-                    <p>Kerner Dániel vagyok, 22 éves pályakezdő informatikus. A Pécsi Tudomány Egyetem Mérnöki karán végeztem
-                     mérnökinformatikusként 2023 nyarán, ez idő alatt duális képzésben vettem részt a Deutsche Telekomnál
-                     . Itt a főbb feladatom automatizálás volt Visual Basic Application-ben Excel reportokat dolgoztam fel. Már kisebb korom óta érdekelt a programozás,
-                      ezért 14 évesen kezdtem vele fogalkozni. A webfejlesztés komolyabban csak a szakdolgozatom
-                       alatt kezdett érdekelni, a szakdolgozat témám is erre alapult amiben
-                        legfőképpen ReactJS illetve ASP.NET-et használtam. 
+                <h1>{Languages(languageID, 5)}</h1>
+                    <p>{Languages(languageID, 46)}<br></br><br></br>
+                        {Languages(languageID, 47)}
                      </p>                
                      </span>
                 <span>
-                    <h1>Személyes információk</h1>
+                    <h1>{Languages(languageID, 6)}</h1>
                     <ul>
                         {personalArray.map((arrayData, arrayIndex) => (
                             <>
                                 <li>
                                     <span>
-                                        {arrayData[0]} :
+                                        {arrayData[0]}
                                     </span>
                                     <span>
                                         {arrayData[1]}
