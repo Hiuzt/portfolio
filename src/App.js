@@ -20,7 +20,6 @@ function App() {
     const [activeColorState, setColor] = useState(5);
     const dispatch = useDispatch();
     const languageID = useSelector(selectLanguageID)
-    console.log(languageID)
 
     useEffect(() => {
         const activeColor = localStorage.getItem("main-color");
@@ -29,6 +28,12 @@ function App() {
             document.body.addClass("color-5")
             setColor(5);
             return;
+        }
+
+        const storageItemLanguageID = localStorage.getItem("languageID")
+
+        if (storageItemLanguageID === null) {
+            localStorage.setItem("languageID", 1)
         }
 
         document.body.classList.add("color-" + activeColor);

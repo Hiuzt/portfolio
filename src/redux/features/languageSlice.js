@@ -1,11 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-var storageItemLanguageID = localStorage.getItem("languageID")
-
-if (storageItemLanguageID === null) {
-	localStorage.setItem("languageID", 1)
-	storageItemLanguageID = 1;
-}
+const storageItemLanguageID = localStorage.getItem("languageID")
 
 const languageSlice = createSlice({
   	name: "language",
