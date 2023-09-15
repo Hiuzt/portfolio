@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 
-const transition = (OgComponent) => {
+const Transition = (OgComponent) => {
   
   return () => (
     <>
@@ -23,10 +23,8 @@ const transition = (OgComponent) => {
             exit={{scaleY: 1}}
             transition={{duration: 0.5, ease: [0.22, 1, 0.36, 1]}}
         />
-        {/* <OgComponent /> */}
-        {/* {/* </motion.div> */}
     </>
   )
 }
 
-export default transition;
+export default Transition;

@@ -87,9 +87,8 @@ const Menu = () => {
                     <ul className="menu-nav">
                         {menuNames.map((menuValue, menuIndex) =>
                             <>
-                                {location.pathname === menuValue[3] ? 
-                                    <li key={menuIndex} className={"menu-nav-item active-page"}>
-                                    <Link  to={menuValue[3]} className="menu-nav-link">                                                         
+                                    <li key={menuIndex} className={`menu-nav-item ${location.pathname === menuValue[3] ? "active-page" : ""}`}>
+                                    <Link to={menuValue[3]} className="menu-nav-link">                                                         
                                             <span>
                                                 <div className="icon-image">
                                                     {menuValue[0]}
@@ -97,27 +96,7 @@ const Menu = () => {
                                                 <div className="menu-nav-item-text">{menuValue[1]}</div> 
                                             </span>                                                                
                                     </Link>
-                                </li>
-                                :
-                                <li key={menuIndex} className={"menu-nav-item " + menuValue[2]}>
-                                    <Link to={menuValue[3]} onClick={(e) => {
-                                        $(".menu-button").toggleClass("show-menu")
-                                        $(".menu").toggleClass("show-menu")
-                                        $(".menu-overlay").toggleClass("show-menu")
-                                        $(".settings-bg").toggleClass("show-menu")
-                                        setShow(!showMenu);
-                                    }} className="menu-nav-link">                                                         
-                                            <span>
-                                                <div className="icon-image">
-                                                    {menuValue[0]}
-                                                </div>
-                                                <div className="menu-nav-item-text">{menuValue[1]}</div> 
-                                            </span>                                                                
-                                    </Link>
-                                </li>
-                                }
-                            
-                                
+                                </li>                                                   
                             </>
                         )}
                     </ul>

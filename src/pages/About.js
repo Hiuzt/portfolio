@@ -10,11 +10,12 @@ import ReactOwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import $ from "jquery";
 import 'owl.carousel';
-import transition from '../transition';
+import Transition from '../components/Transition';
 
 import { useDispatch, useSelector } from "react-redux";
 import {selectLanguageID} from "../redux/features/languageSlice";
 import Languages from "../components/Languages";
+import Reveal from '../components/Reveal';
 
 
 
@@ -47,52 +48,74 @@ const About = () => {
                 </div>
             </div>
             <div className="about-content">   
-                <div className="personal-information">
-                    <PersonalPartial />
-                </div>
-                <div className="sub-title">{Languages(languageID, 13)}</div>
-                <div className="skill-container">
-                    {skillPartial}
-                </div>
-                <div className="sub-title">{Languages(languageID, 14)}</div>
-                <div className="service-container">
-                    <ServicePartial />
-                </div>
+                <Reveal>  
+                    <div className="personal-container">
+                        <div className="personal-information">
+                            <PersonalPartial />
+                        </div>  
+                    </div>                         
+                </Reveal>
                 
-                <div className="sub-title">{Languages(languageID, 23)}<svg data-tooltip-id="my-tooltip-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50"><path d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"></path></svg>           </div>
-                <div className="client-container">
-                    <CompanyPartial />   
+                <Reveal>
+                    <div className="sub-title">{Languages(languageID, 13)}</div>
+                </Reveal>
+                <div className="skill-container">
+                    <Reveal>                           
+                        {skillPartial}                          
+                    </Reveal> 
                 </div>
-                <div className="sub-title">{Languages(languageID, 24)}<svg data-tooltip-id="my-tooltip-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50"><path d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"></path></svg></div>
-                <div className="comment-container">
-                    <center>
-                    <ReactOwlCarousel id="comment-carousel"  loop={true} autoplay={true} autoplayHoverPause={true} autoplayTimeout={6000}
-                    responsive= {
-                        {
-                            '0': {
-                                items: 1
-                            },
-                            '800':{
-                                items: 2
-                            },
-                            '1400':{
-                                items: 3
-                            },
+              
+                <Reveal>
+                    <div className="sub-title">{Languages(languageID, 14)}</div>
+                </Reveal>
+                    <div className="service-container">
+                        <ServicePartial />
+                    </div>
+                
+                <Reveal>
+                    <div className="sub-title">{Languages(languageID, 23)}<svg data-tooltip-id="my-tooltip-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50"><path d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"></path></svg>           </div>
+                </Reveal>   
+                    <div className="client-container">
+                        <Reveal>
+                            <CompanyPartial /> 
+                        </Reveal>  
+                    </div>
+                
+                <Reveal>
+                    <div className="sub-title">{Languages(languageID, 24)}<svg data-tooltip-id="my-tooltip-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 50 50"><path d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"></path></svg></div>
+                </Reveal>
+                
+                   <div className="comment-container">
+                    <Reveal>
+                        <center>
+                        <ReactOwlCarousel id="comment-carousel"  loop={true} autoplay={true} autoplayHoverPause={true} autoplayTimeout={6000}
+                        responsive= {
+                            {
+                                '0': {
+                                    items: 1
+                                },
+                                '800':{
+                                    items: 2
+                                },
+                                '1400':{
+                                    items: 3
+                                },
+                            }
+                            
                         }
                         
-                    }
-                    
-                     >
-                        {commentArray.map((commentData, commentIndex) => (            
-                            <div className="item">
-                                <CommentCard clientName = {commentData[0]} commentText = {commentData[1]} imageSource = {commentData[2]} dateTime = {commentData[3]} />
-                            </div>
-                        ))}
-                    </ReactOwlCarousel>
-                    </center>   
-                    
-                    
+                        >
+                            {commentArray.map((commentData, commentIndex) => (            
+                                <div className="item">
+                                    <CommentCard clientName = {commentData[0]} commentText = {commentData[1]} imageSource = {commentData[2]} dateTime = {commentData[3]} />
+                                </div>
+                            ))}
+                        </ReactOwlCarousel>
+                        </center>   
+                        
+                    </Reveal>   
                 </div>
+                
             </div>
             <Tooltip
                 id="my-tooltip-1"
@@ -106,4 +129,4 @@ const About = () => {
 
 
 
-export default transition(About)
+export default Transition(About)

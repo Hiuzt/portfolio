@@ -19,7 +19,7 @@ function App() {
     const [isOpen, setOpen] = useState(false);
     const [activeColorState, setColor] = useState(5);
     const dispatch = useDispatch();
-    const languageID = useSelector(selectLanguageID)
+    const languageID = useSelector(selectLanguageID);
 
     useEffect(() => {
         const storageItemLanguageID = localStorage.getItem("languageID")
@@ -60,7 +60,6 @@ function App() {
 
     const changeLanguage = (languageID, target) => {
         dispatch(SET_LANGUAGE_ID(languageID));
-
     }
     return (
  <>

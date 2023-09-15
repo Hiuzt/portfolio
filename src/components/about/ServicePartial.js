@@ -10,6 +10,7 @@ import apiImg from "../../files/api.png";
 import { useDispatch, useSelector } from "react-redux";
 import {selectLanguageID} from "../../redux/features/languageSlice";
 import Languages from "../Languages";
+import Reveal from '../Reveal';
 
 const ServicePartial = () => {
 
@@ -55,17 +56,18 @@ const ServicePartial = () => {
   return (
     <>
     {serviceArray.map((serviceData, serviceIndex) => (
-        <div className="card">
-        {serviceData[1]}
-            <div className="title">
-                {serviceData[0]}
-                {serviceData[2]}
+        <Reveal>
+            <div className="card">
+                {serviceData[1]}
+                <div className="title">
+                    {serviceData[0]}
+                    {serviceData[2]}
+                </div>
+                <div className="details">
+                    {serviceData[3]}
+                </div>
             </div>
-            <div className="details">
-                {serviceData[3]}
-            </div>
-        </div>
-        
+        </Reveal>
    
     ))}
     </>

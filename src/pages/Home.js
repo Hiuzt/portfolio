@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from '../components/Menu'
 import videoBg from "../files/background.mp4";
-import transition from '../transition';
+import Transition from '../components/Transition';
 
 const Home = () => {
   return (
@@ -30,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default transition(Home)
+export default Transition(Home)
