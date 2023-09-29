@@ -1,13 +1,10 @@
 import React from 'react'
 import Transition from '../components/Transition';
 import Reveal from '../components/Reveal';
-import { useDispatch, useSelector } from "react-redux";
+import {useSelector } from "react-redux";
 import {selectLanguageID} from "../redux/features/languageSlice";
 import Languages from "../components/Languages";
 import { Link } from 'react-router-dom';
-import {motion} from "framer-motion";
-import { useState } from 'react';
-
 const Reference = () => {
     const languageID = useSelector(selectLanguageID)
     
@@ -66,7 +63,7 @@ const Reference = () => {
             <ul>
             {referenceArray.map((referenceData, referenceIndex) => (
                 <Reveal>
-                    <li index={referenceIndex}>
+                    <li key={referenceIndex}>
                         <div className="img-container">
                             <img src={require("../files/websites/" + referenceData[0])} alt=''/> 
                         </div>
@@ -76,7 +73,7 @@ const Reference = () => {
                             <span>{referenceData[3]}</span>
                             <div className="stack">
                                 {referenceData[4].map((stackData, stackIndex) => (
-                                    <p tabIndex={stackIndex}>
+                                    <p key={stackIndex}>
                                         {stackData}
                                     </p>
                                 ))}                                                           

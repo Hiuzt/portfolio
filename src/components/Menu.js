@@ -1,11 +1,11 @@
 import "../files/design.css"
 import { Link } from 'react-router-dom';
-import React, {useEffect, useState} from "react"
-import { BrowserRouter, Switch, Route, Routes, Redirect, useLocation } from "react-router-dom";
+import React, {useState} from "react"
+import {  useLocation } from "react-router-dom";
 import Languages from "./Languages";
 
 import profile from "../files/profile.jpg"
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import {selectLanguageID} from "../redux/features/languageSlice";
 import $ from "jquery"
 
