@@ -19,17 +19,17 @@ const Reference = () => {
             Languages(languageID, 41),         [
                 "CSS", "React", "ASP.NET", "MYSQL"
             ], 
-            "https://github.com/Hiuzt/Szakdolgozat/tree/main",
-            "https://github.com/Hiuzt/portfolio",
+            "https://github.com/Hiuzt/Szakdolgozat/",
+            "",
         ],
         [   
             "website3.png",
-            "Kerner Dániel",
-            Languages(languageID, 42),
-            Languages(languageID, 43),            [
+            "Kerweather",
+            Languages(languageID, 49),
+            Languages(languageID, 50),            [
                 "CSS", "React", "Weather-API", "ChartJS"
             ], 
-            "https://github.com/Hiuzt/weather-app",
+            "https://github.com/Hiuzt/dani-weather-app",
             "https://weather-app-xi-jet.vercel.app/",
         ],  
         [   
@@ -40,7 +40,7 @@ const Reference = () => {
                 "CSS", "React", "Redux", "JQuery", "Framer-motion"
             ], 
             "https://github.com/Hiuzt/portfolio",
-            "https://github.com/Hiuzt/portfolio",
+            "https://kernerdaniel.vercel.app/",
         ], 
         [   
             "website1.png",

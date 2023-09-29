@@ -58,7 +58,9 @@ const Languages = (languageID, textID) => {
 		"Telekom, where my main task was automation using Visual Basic Application to process Excel reports."],
 		["Már kisebb korom óta érdekelt a programozás, ezért 14 évesen kezdtem vele fogalkozni. A webfejlesztés komolyabban csak a szakdolgozatom alatt kezdett érdekelni, a szakdolgozat témám is erre alapult amiben legfőképpen ReactJS illetve ASP.NET-et használtam.", 
 		"I have been interested in programming since a young age, therefore i dig into it at the age of 14. I became more interested in web development during the preparation of my thesis, which was focused on ReactJS and ASP.NET."],
-		["Minden jog fenntartva", "All rights reserved."]
+		["Minden jog fenntartva", "All rights reserved."],
+		["Időjárás jelentés", "Weather forecast"],
+		["Ez egy saját projekt, az REST API kezelést illetve adatok vizualizációját szimbolizálja", "This is a personal project that symbolizes the controlling of REST APIs and data visualization"]
 	]
   return languageArray[textID - 1][languageID - 1];
 }

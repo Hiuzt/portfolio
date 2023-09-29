@@ -1828,6 +1828,11 @@
       flex-direction: column;
       height: auto;
     }
+
+    .reference-container .content ul li:nth-child(odd) {
+      flex-direction: column;
+      height: auto;
+    }
   
     .content ul li .img-container {
       width: 100%;
