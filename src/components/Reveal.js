@@ -16,8 +16,8 @@ const Reveal = ({children}) => {
     return (
         <>
             
-            <div ref={scrollRef}>
-                <motion.div
+            <div ref={scrollRef} className="reveal-ref">
+                <motion.div className="reveal-motion"
                     variants={{
                         hidden: {opacity: 0, y: 100, display: "flex"},
                         visible: {opacity: 1, y: 0, display: "flex", flexDirection: "column", margin: "0px", padding: "0px"}

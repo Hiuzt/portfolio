@@ -26,7 +26,7 @@ const Languages = (languageID, textID) => {
 		["API  tervezés, felépítés, karbantartás", "Planning, building, maintaining APIs"],
 		["Ügyfeleim", "Clients"],
 		["Kommentek", "Comments"],
-		["Ez az adat nem valós, a kinézet kedvéért lett létrehozva", "This data is false, it has been created due to the design of the webpage"],
+		["Ez az adat nem valós", "This data is not valid"],
 		["Oktatás", "Education"],
 		["Munkahelyek", "Workplaces"],
 		["Pécsi Tudományegyetem", "University of Pécs"],
@@ -57,7 +57,7 @@ const Languages = (languageID, textID) => {
 		"a computer engineer in the summer of 2023. During this time, I participated in a dual education program at Deutsche " +
 		"Telekom, where my main task was automation using Visual Basic Application to process Excel reports."],
 		["Már kisebb korom óta érdekelt a programozás, ezért 14 évesen kezdtem vele fogalkozni. A webfejlesztés komolyabban csak a szakdolgozatom alatt kezdett érdekelni, a szakdolgozat témám is erre alapult amiben legfőképpen ReactJS illetve ASP.NET-et használtam.", 
-		"I have been interested in programming since a young age, starting to delve into it when I was just 14. I became more seriously interested in web development during the preparation of my thesis, which was primarily focused on ReactJS and ASP.NET."],
+		"I have been interested in programming since a young age, therefore i dig into it at the age of 14. I became more interested in web development during the preparation of my thesis, which was focused on ReactJS and ASP.NET."],
 		["Minden jog fenntartva", "All rights reserved."]
 	]
   return languageArray[textID - 1][languageID - 1];

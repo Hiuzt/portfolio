@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import $ from "jquery"
 import SkillArray from '../components/about/SkillArray';
 import Transition from '../components/Transition';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectLanguageID } from "../redux/features/languageSlice";
 import Languages from "../components/Languages";
 import Reveal from '../components/Reveal';
@@ -39,7 +39,6 @@ const Resume = () => {
 
         const handleResize = () => {
             if (windowSize.current[0] > 992) {
-                console.log("RESIZE")
                 $(".resume-box:nth-child(2) ul li").css("height", $(".resume-box:first-child ul").height());
             }
                 

@@ -235,6 +235,13 @@
   .menu-nav-link .icon-image {
       fill: var(--base-color);
       margin-right: 10px;
+      width: 16px;
+      height: 16px;
+  }
+
+  .menu-nav-link .icon-image svg {
+    width: 16px;
+    height: 16px;
   }
   
   .menu-nav-item {
@@ -429,9 +436,13 @@
     }
   
     .personal-information span:first-child {
-      max-width: 65%;
+      width: 65%;
       padding-right: 60px;
     }
+
+    .personal-information span:nth-child(2) {
+      width: 35%;
+    } 
   
     .personal-information span:first-child::after {
       content: "Kerner Dániel";
@@ -1282,7 +1293,7 @@
     list-style: none;
   }
   
-  .content ul li:nth-child(odd) {
+  .content ul .reveal-ref:nth-child(odd) li {
     flex-direction: row-reverse;
   }
   

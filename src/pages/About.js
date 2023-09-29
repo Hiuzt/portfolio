@@ -23,12 +23,9 @@ import Reveal from '../components/Reveal';
 const About = () => {
     const languageID = useSelector(selectLanguageID)
     const commentArray = [
-        ["Kerner Dániel", "360noscope", "avatar1.png", "2023.09.09 11:33"],
         ["Horváth István", "Rövid szöveg Rövid szöveg Rövid szöveg Rövid szöveg v Rövid szöveg Rövid szöveg Rövid szöveg Rövid szöveg Rövid szöveg ", "avatar2.png", "2023.09.07 12:46"],
         ["Németh Andor", "Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szövegSzöveg szöveg Szöveg szöveg Szöveg szövegSzöveg szövegSzöveg szöveg Szöveg szöveg Szöveg   .", "avatar3.png", "2022.04.03. 15:18"],
         ["Zöld Árpád" ,"Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szöveg Szöveg szövegSzöveg szöveg Szöveg szöveg Szöveg szövegSg  Szöveg szöveg  .", "avatar4.png", "2023.01.03. 19:43"],
-        ["Ács Kristóf" ,"Köszi a boostot lolban! Máskor is fordulok hozzád, elutaltam a 300 eurót és instant jött a boost.", "avatar4.png", "2023.09.09. 12:10"],    
-        ["Spotysan" ,"Egy pofonos csicska vagyok és exhausttal játszok aramon", "avatar4.png", "2023.04.08. 02:31"],  
     ]
 
 

@@ -11,7 +11,7 @@ import $ from "jquery"
 
 
 const Menu = () => {
-    const [showMenu, setShow] = useState(true);
+    const [showMenu, setShow] = useState(false);
 
     const languageID = useSelector(selectLanguageID)
 
@@ -55,27 +55,21 @@ const Menu = () => {
                 </div>
                 <div className="button-box" onClick={
                         (e) => {
-                            $(".menu-button").toggleClass("show-menu")
-                            $(".menu").toggleClass("show-menu")
-                            $(".menu-overlay").toggleClass("show-menu")
                             $(".settings-bg").toggleClass("show-menu")
                             setShow(!showMenu);
                         }                    
                     }>
-                    <div className="menu-button">
+                    <div className={`menu-button ${showMenu === true ? "show-menu": ""}`}>
                         
                     </div>
                 </div>
                     
             </div>
-            <div className="menu-overlay" onClick={(e) => {
-                $(".menu-button").toggleClass("show-menu")
-                $(".menu").toggleClass("show-menu")
-                $(".menu-overlay").toggleClass("show-menu")
+            <div className={`menu-overlay ${showMenu === true ? "show-menu": ""}`} onClick={(e) => {
                 $(".settings-bg").toggleClass("show-menu")
                 setShow(!showMenu);
             }}></div>
-            <div className="menu">
+            <div className={`menu ${showMenu === true ? "show-menu": ""}`}>
                 <div className="profile-picture-container">
                     <img className="profile-picture" src={profile} alt=""></img>
                     <div className="profile-picture-name">
