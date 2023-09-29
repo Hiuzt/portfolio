@@ -59,8 +59,7 @@ const Menu = () => {
                             setShow(!showMenu);
                         }                    
                     }>
-                    <div className={`menu-button ${showMenu === true ? "show-menu": ""}`}>
-                        
+                    <div className={`menu-button ${showMenu === true ? "show-menu": ""}`}>                       
                     </div>
                 </div>
                     
@@ -82,7 +81,12 @@ const Menu = () => {
                         {menuNames.map((menuValue, menuIndex) =>
                             <>
                                     <li key={menuIndex} className={`menu-nav-item ${location.pathname === menuValue[3] ? "active-page" : ""}`}>
-                                    <Link to={menuValue[3]} className="menu-nav-link">                                                         
+                                    <Link to={menuValue[3]} className="menu-nav-link" onClick={
+                                        (e) => {
+                                            // e.preventDefault()
+                                            $(".settings-bg").removeClass("show-menu")
+                                            setShow(false);
+                                        }}>                                                         
                                             <span>
                                                 <div className="icon-image">
                                                     {menuValue[0]}
