@@ -26,7 +26,7 @@ const Languages = (languageID, textID) => {
 		["API  tervezés, felépítés, karbantartás", "Planning, building, maintaining APIs"],
 		["Ügyfeleim", "Clients"],
 		["Kommentek", "Comments"],
-		["Ez az adat nem valós", "This data is not valid"],
+		["Ez az adat nem valós", "This data is invalid"],
 		["Oktatás", "Education"],
 		["Munkahelyek", "Workplaces"],
 		["Pécsi Tudományegyetem", "University of Pécs"],
