@@ -13,7 +13,7 @@ const PersonalPartial = () => {
         [Languages(languageID, 9), "Pécs"],
         [Languages(languageID, 10), "0620-318-4108"],
         [Languages(languageID, 11), "kerner.daniel1@gmail.com"],
-        [Languages(languageID, 12), "Deutsche Telekom"],
+        [Languages(languageID, 12), "-"],
     ]
 
 
