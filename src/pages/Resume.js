@@ -101,7 +101,7 @@ const Resume = () => {
                     </div>
                     <ul>
                         <li>
-                            <p className="date">2019-{Languages(languageID, 35)}</p>
+                            <p className="date">2019-2023</p>
                             <p className="school-name">Trainee</p>
                             <p className="name">Business Support</p>
                             <p className="name">Deutsche Telekom</p>
