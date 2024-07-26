@@ -51,9 +51,9 @@ const Languages = (languageID, textID) => {
 		],
 		["Forráskód", "Source code"],
 		["Előnézet", "Demo"],
-		["Kerner Dániel vagyok, 22 éves pályakezdő informatikus. A Pécsi Tudomány Egyetem Mérnöki karán végeztem mérnökinformatikusként 2023 nyarán, ez idő alatt duális képzésben vettem "+
+		["Kerner Dániel vagyok, 23 éves pályakezdő informatikus. A Pécsi Tudomány Egyetem Mérnöki karán végeztem mérnökinformatikusként 2023 nyarán, ez idő alatt duális képzésben vettem "+
 		"részt a Deutsche Telekomnál. Itt a főbb feladatom automatizálás volt Visual Basic Application-ben Excel reportokat dolgoztam fel. ",
-		"I am Daniel Kerner, a 22-year-old aspiring IT professional. I graduated from the Faculty of Engineering at the University of Pécs as " + 
+		"I am Daniel Kerner, a 23-year-old aspiring IT professional. I graduated from the Faculty of Engineering at the University of Pécs as " + 
 		"a computer engineer in the summer of 2023. During this time, I participated in a dual education program at Deutsche " +
 		"Telekom, where my main task was automation using Visual Basic Application to process Excel reports."],
 		["Már kisebb korom óta érdekelt a programozás, ezért 14 évesen kezdtem vele fogalkozni. A webfejlesztés komolyabban csak a szakdolgozatom alatt kezdett érdekelni, a szakdolgozat témám is erre alapult amiben legfőképpen ReactJS illetve ASP.NET-et használtam.", 
