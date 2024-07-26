@@ -47,8 +47,8 @@ const Reference = () => {
             Languages(languageID, 52),            [
                 "React", "Typescript", "Next", "Tailwind", "Prisma"
             ], 
-            "https://github.com/Hiuzt/auth_next",
-            "https://github.com/Hiuzt/auth_next",
+            "https://github.com/Hiuzt/auth_next/tree/dev",
+            "https://github.com/Hiuzt/auth_next/tree/dev",
         ],                      
     ]
 
