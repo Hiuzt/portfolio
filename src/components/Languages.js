@@ -60,7 +60,7 @@ const Languages = (languageID, textID) => {
 		"I have been interested in programming since a young age, therefore i dig into it at the age of 14. I became more interested in web development during the preparation of my thesis, which was focused on ReactJS and ASP.NET."],
 		["Minden jog fenntartva", "All rights reserved."],
 		["Időjárás jelentés", "Weather forecast"],
-		["Ez egy saját projekt, az REST API kezelést illetve adatok vizualizációját szimbolizálja", "This is a personal project that symbolizes the controlling of REST APIs and data visualization in javascript"]
+		["Ez egy saját projekt, az REST API kezelést illetve adatok vizualizációját szimbolizálja", "This is a personal project that symbolizes the controlling of REST APIs and data visualization in javascript"],
 		["Önéletrajz készítő", "Curriculum Vitae maker"],
 		["Ez egy saját projekt, önéletrajz készítésére szolgál, fejlesztés alatt áll.", "This is a personal project for making CV-s. It is under developing"]
 	
