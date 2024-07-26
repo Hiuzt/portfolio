@@ -17,8 +17,8 @@ const Home = () => {
                     <span>DÁNIEL</span> 
                     <div class="animated-scroller">
                         <span>
-                            CSS<br/>
-                            HTML<br/>
+                            React<br/>
+                            Vue<br/>
                             Javascript<br/>
                             C#<br/>
                             SQL

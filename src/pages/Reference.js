@@ -44,11 +44,21 @@ const Reference = () => {
             "Kerner Dániel",
             Languages(languageID, 42),
             Languages(languageID, 43),            [
-                "Teszt", "Teszt", "Teszt", "Teszt"
+                "Python", "Django", "CSS", "Javascript"
             ], 
+            "https://github.com/Hiuzt/python",
             "https://github.com/Hiuzt/portfolio",
-            "https://github.com/Hiuzt/portfolio",
-        ],                   
+        ], 
+        [   
+            "website3.png",
+            "Kerner Dániel",
+            Languages(languageID, 51),
+            Languages(languageID, 52),            [
+                "React", "Typescript", "Next", "Tailwind", "Prisma"
+            ], 
+            "https://github.com/Hiuzt/auth_next",
+            "https://github.com/Hiuzt/auth_next",
+        ],                      
     ]
 
   return (
