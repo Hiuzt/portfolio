@@ -40,16 +40,6 @@ const Reference = () => {
             "https://kernerdaniel.vercel.app/",
         ], 
         [   
-            "website1.png",
-            "Kerner Dániel",
-            Languages(languageID, 42),
-            Languages(languageID, 43),            [
-                "Python", "Django", "CSS", "Javascript"
-            ], 
-            "https://github.com/Hiuzt/python",
-            "https://github.com/Hiuzt/portfolio",
-        ], 
-        [   
             "website3.png",
             "Kerner Dániel",
             Languages(languageID, 51),
